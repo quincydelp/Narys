@@ -3,16 +3,52 @@
 <head>
 	<meta charset='utf-8'>
 	<meta name='viewport' content='width=device-width,initial-scale=1'>
+	<link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet" />
 
-	<title>Svelte app wheeeeee</title>
+	<title>Naris</title>
 
-	<link rel='icon' type='image/png' href='/favicon.png'>
+	<link rel='icon' type='image/png' href='/favfav.png'>
 	<link rel='stylesheet' href='/global.css'>
 	<link rel='stylesheet' href='/build/bundle.css'>
 
 	<script defer src='/build/bundle.js'></script>
 </head>
 
-<body>
+
+
+<body class="bg-gradient-to-br from-pink-500 via-red-500 to-yellow-500">
+	<div class="flex h-screen items-center justify-center">
+	    <button id="mainButton" class="bg-gradient-to-l from-green-300 via-blue-500 to-purple-600 text-white font-bold py-2 px-4 rounded">
+	  		Prepare
+		</button>
+	</div>
+    <!-- Connect Web Audio API, Connect webchuck.js and webchuck.wasm -->
+    <script> var whereIsChuck = "https://cdn.jsdelivr.net/gh/ccrma/webchuck@main/src"; </script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/ccrma/webchuck@main/src/webchuck_host.js"></script>
+    <script type="text/javascript" src="./main.js"></script>
+    <script type="text/javascript" src="./connect.js"></script>
 </body>
 </html>
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WebChucK Lite</title>
+</head>
+
+<body>
+    <button id="mainButton">Start WebChucK</button>
+    <p id="grid"></p>
+
+    <script> var whereIsChuck = "https://cdn.jsdelivr.net/gh/ccrma/webchuck@main/src"; </script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/ccrma/webchuck@main/src/webchuck_host.js"></script>
+    <script type="text/javascript" src="./main.js"></script>
+    <script type="text/javascript" src="./connect.js"></script>
+</body>
+
+</html> -->
